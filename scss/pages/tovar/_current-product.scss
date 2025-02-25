@@ -1,0 +1,251 @@
+.current-product {
+
+    // .current-product__container
+
+    &__container {
+    }
+
+    // .current-product__row
+
+    &__row {
+        display: flex;
+        @media (max-width:767.98px) {
+            flex-direction: column;
+        }
+        @media (min-width:767.98px) {
+            padding-top: 50px;
+        }
+    }
+
+    // .current-product__description
+
+    &__description {
+    }
+}
+.current-product-row {
+
+    // .current-product-row__images-block
+
+    &__images-block {
+    }
+
+    // .current-product-row__attributes-block
+
+    &__attributes-block {
+    }
+}
+.current-images-block {
+    
+    @media (max-width:767.98px) {
+        order: 2;  
+    }
+    @media (min-width:767.98px) {
+        flex: 0 0 50%;  
+    }
+
+    // .current-images-block__thumbnail
+
+    &__thumbnail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+
+    // .current-images-block__images-list
+
+    &__images-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.current-images-bottom {
+
+    // .current-images-bottom__list
+
+    &__list {
+    }
+}
+.current-images-bottom-list {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    // .current-images-bottom-list__item
+
+    &__item {
+        width: calc(25% - 10px);
+        img {
+            width: 100%;
+        }
+    }
+}
+.current-attributes-block {
+    @media (max-width:767.98px) {
+        order: 1;
+        padding: 30px 0;  
+    }
+    @media (min-width:767.98px) {
+padding-left: 20px;
+    }
+
+
+    // .current-attributes-block__content
+
+    &__content {
+
+    }
+
+    // .current-attributes-block__parameters
+
+    &__parameters {
+    }
+}
+.current-attr-block-content {
+
+    // .current-attr-block-content__title
+
+    &__title {
+        color: #55555A;
+        font-size: 36px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    // .current-attr-block-content__price
+
+    &__price {
+        color: #AAAAAF;
+        font-size: 33px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    // .current-attr-block-content__button
+
+    &__button {
+        padding: 10px 20px;
+       border-radius: 4px;
+       color: white;
+       background-color: #53C05E;
+       font-weight: 600;
+       text-transform: uppercase;
+       margin-bottom: 30px;
+       transition: all 250ms linear;
+       &:hover {
+        background-color: #039f13;
+       }
+    }
+}
+.current-attr-block-parameters {
+
+    // .current-attr-block-parameters__title
+
+    &__title {
+        color: #AAAAAF;
+        font-size: 16px;
+        margin-bottom: 30px;
+        font-weight: 300;
+    }
+
+    // .current-attr-block-parameters__list
+
+    &__list {
+    }
+}
+.current-attr-block-parameters-list {
+
+    // .current-attr-block-parameters-list__item
+
+    &__item {
+        border: 1px solid #787878;
+        color: black;
+    }
+}
+.current-product-description {
+
+    // .current-product-description__title
+
+    &__title {
+        color: #AAAAAF;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    // .current-product-description__text
+
+    &__text {
+        margin-bottom: 1em;
+        color: #55555A;
+    }
+}
+.warranty {
+
+    // .warranty__container
+
+    &__container {
+    }
+
+    // .warranty__img
+
+    &__img {
+    }
+
+    // .warranty__title
+
+    &__title {
+    }
+}
+
+.backlink__container {
+    text-align: center;
+}
+
+.back-link {
+    padding: 10px 20px;
+    background-color: #55555A;
+    color: #E5E5E8;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    transition: all 300ms linear;
+    &:hover {
+        background-color: #8a8a91;
+    }
+}
+
+.current-attr-block-parameters-list {
+    border-collapse: collapse;
+
+}
+table td {
+    padding: 15px;
+}
+
+.table__parameter {
+    background-color: #BEBEC3;
+}
+
+.table__value {
+    background-color: #F5F5F5;
+}
+
+.thin-line {
+    border: none;
+    height: 1px;
+    background-color: #ccc; /* Серый цвет */
+    margin: 10px 0;
+}
+
+
+
+

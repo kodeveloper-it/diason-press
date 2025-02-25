@@ -1,0 +1,77 @@
+@import "main/fonts";
+@import "main/header";
+@import "main/footer";
+@import "pages/golovna/startscreen";
+@import "pages/golovna/production";
+@import "pages/golovna/advantages";
+@import "pages/golovna/clients";
+@import "pages/produkciya/goods";
+@import "pages/pro-nas/about";
+@import "pages/pro-nas/achievements";
+@import "pages/kontakti/form";
+@import "pages/tovar/current-product";
+@import "modal";
+
+
+
+body {
+    font-family: "Open Sans", serif;
+    min-width: 320px;
+  }
+body, html {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    main{
+        flex: 1 1 auto;
+    }
+}
+
+[class*="__container"]{
+	margin: 0 auto;
+	padding: 0 15px;
+}
+@media (max-width:479.98px){
+    [class*="__container"]{
+        width: 100%;
+        max-width: 480px;
+    }
+}
+@media (min-width:768px){
+    [class*="__container"]{
+        width: 768px;
+    }
+}
+@media (min-width:998px){
+    [class*="__container"]{
+        width: 998px;
+    }
+}
+@media (min-width:1290px){
+    [class*="__container"]{
+        width: 1290px;
+    }
+}
+
+.locked {
+    overflow: hidden;
+}
+
+.hover-btn-effect {
+    transition: all 300ms linear;
+    &:hover {
+        background-color: #AAAAAF;
+    }
+}
+
+
+
+
+
+
+
+  

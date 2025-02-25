@@ -1,0 +1,137 @@
+.goods {
+
+    // .goods__container
+
+    &__container {
+    }
+
+    // .goods__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    // .goods__descriptions
+
+    &__descriptions {
+        color: #55555A;
+        margin-bottom: 10px;
+        span{
+            &:nth-child(2) {
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    // .goods__list
+
+    &__list {
+        @media (min-width:767.98px) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            justify-content: start;
+            column-gap: 32px;
+            row-gap: 40px;
+        }
+    }
+}
+.goods-list {
+
+    // .goods-list__item
+
+    &__item {
+        // margin: 0 auto;
+        // max-width: 480px;
+        margin-bottom: 15px;
+        @media (max-width:480px) {
+            width: 100%;
+        }
+        @media (min-width:767.98px) {
+            flex: 0 0 calc(50% - 32px);
+            max-width: auto;
+            margin-bottom: 0;
+            
+        }
+        @media (min-width:997.98px) {
+            flex: 0 0 calc(33% - 32px);
+            
+        }
+        @media (min-width:1200px) {
+            flex: 0 0 calc(25% - 32px);
+            
+        }
+    }
+}
+.good-item {
+    border: 1px solid #E5E5E8;
+    border-radius: 4px;
+    // .good-item__img
+    &:hover {
+       img {
+            transform: scale(1.1);
+        }
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 300px;
+        img {
+            transition: all 300ms linear;
+            width: 100%;
+        }
+    }
+
+    // .good-item__content
+
+    &__content {
+        padding: 23px 13px 10px;
+        background-color: #E5E5E8;
+        min-height: 110px;
+        h2 {
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #55555A;
+            font-size: 19px;
+            text-align: left;
+        }
+        p {
+            text-align: right;
+            font-weight: 600;
+            font-size: 24px;
+            color: #53C05E;
+        }
+    }
+}
+
+.warranty {
+    padding: 50px 0;
+
+    // .warranty__container
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    // .warranty__img
+
+    &__img {
+    }
+
+    // .warranty__title
+
+    &__title {
+        color: #AAAAAF;
+    }
+}
+
